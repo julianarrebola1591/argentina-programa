@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <ul>
+            <label for="">Dólares:</label>
+            <input type="text" id="input-dolar">
+            <label for="">Pesos:</label>
+            <input type="text" id="input-peso">
+            <button id="btn" onclick="dolaresAPesos()">Pasar de Dólares a Pesos</button>
+            <button id="btn" onclick="pesosADolares()">Pasar de Pesos a Dólares</button>
+        </ul>
+    </div>
+    <div class="conteiner">
+        <ul>
+            <label for="">Cº</label>
+            <input type="text" id="input-celcius">
+            <label for="">Fº</label>
+            <input type="text" id="input-fahrenheit">
+            <button id="btn" onclick="celciusAFahrenheit()">Pasar de Cº a Fº</button>
+        </ul>
+    </div>
+    <div class="conteiner">
+        <ul>
+            <li>
+                <label for="">Nombre: </label>
+                <input type="text" id="input-nombre"></li>
+            <li>
+                <label for="">Material: </label>
+                <input list="materiales" id="input-material"></li>
+                <datalist id="materiales">
+                    <option value="Madera">
+                    <option value="Metal">
+                    <option value="Plastico">
+                </datalist>
+            <li>
+                <label for="">Seleccione el tamaño de la caja: </label>
+            </li>
+            <li>
+                <input id="pequeño" type="radio" name="opcion" value="Pequeña"><span>Pequeña</span>
+            </li>
+            <li>
+                <input id="mediano" type="radio" name="opcion" value="Mediana"><span>Mediana</span>
+            </li>
+            <li>
+                <input id="grande" type="radio" name="opcion" value="Grande"><span>Grande</span>
+            </li>
+            <li>
+                <label for="">Comentario: </label>
+            </li>
+            <li>
+                <input type="text" id="comentario" style="height: 28px; width: 300px;"></li>
+            </li>
+            <li>
+                <button id="btn" onclick="enviarCaja()">Enviar</button>
+                <input type="text" id="mensaje" style="width: 460px;height: 24px; font-size: small;"></li>
+            </li>
+           
+        </ul>
+    </div>
+    <div class="conteiner2">
+        <ul>
+            <label for="">Adivina un numero del 1 al 5:</label>
+            <input type="text" id="input-adivinar" style="width: 100px; margin-right: 25px;">
+            <input type="text" id="respuesta" value="" style="width: 270px;">
+            <button id="btn-adivinar" onclick="adivinarNumero()" >Adivinar el numero</button>
+        </ul>
+    </div>
+    <div class="conteiner">
+        <ul>
+            <label for="">Ingrese un Nombre: </label>
+            <input type="text" id="input-name" value="nombre" style="width: 330px; margin-right: 25px;">
+            <button id="btn" onclick="agregarNombre()">Agregar</button>
+            <ul id="nombres">
+
+            </ul>
+        </ul>
+    </div>
+</body>
+</html>
