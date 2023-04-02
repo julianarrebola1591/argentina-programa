@@ -94,3 +94,76 @@ function sumarPositivos(){
 }
 console.log(sumarPositivos())
 
+let arrayEj5 =  ["Florencia", "Lucas", "Ezequiel", "Matias", "Bruno", "Gustavo", "Martin"]
+
+// A
+function obtenerMenosDe6Letras(array){
+    let array2 = []
+    array.forEach(element => {
+        if (element.length >= 6){
+            array2.push(element)
+        }
+    });
+    return array2
+}
+
+console.log(obtenerMenosDe6Letras(arrayEj5))
+
+// B
+function obtenerConM(array){
+    let array2 = []
+    array.forEach(element => {
+        if (element[0] == "M"){
+            array2.push(element)
+        }
+    });
+    return array2
+}
+console.log(obtenerConM(arrayEj5))
+
+//C
+function ordenarAlfabeticamente(array){
+    let array2 = array
+    console.log(array2.sort())
+}
+ordenarAlfabeticamente(arrayEj5)
+
+// D
+function soloPrimeraLetra(array){
+    let array2 = []
+    array.forEach(element => {
+        array2.push(element[0])
+    });
+    return array2
+}
+console.log(soloPrimeraLetra(arrayEj5))
+
+//10. Crear dos párrafos en el body de una página. Capturar el evento click solo del primero
+//utilizando la librería jQuery.
+
+$("#parrafo").click(function(){
+    document.getElementById("parrafo").style.color = "red"
+})
+
+
+//11. Confeccionar una página que muestre una tabla con dos filas y cambiar el color de fondo
+//cuando sea presionada con el mouse.
+$(".table").click(function(){
+    document.getElementById("tabla").style.background = "#A1B7D9"
+})
+
+//12. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para
+//ocultar un elemento jQuery tiene un método llamado hide()
+$("#li1").click(function(){
+    $("#li1").hide()
+})
+$("#li2").click(function(){
+    $("#li2").hide()
+})
+$("#li3").click(function(){
+    $("#li3").hide()
+})
+$("#li4").click(function(){
+    $("#li4").hide()
+})
+
