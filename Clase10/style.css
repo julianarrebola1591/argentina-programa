@@ -1,0 +1,11 @@
+.ejer2{
+    display: flex;
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
+}
+ul{
+    margin: 16px;
+    margin-left: 0;
+    list-style-type: none
+}

@@ -3,7 +3,8 @@ let colores = ["Verde", "Azul", "Rojo", "Violeta", "Negro"]
 //Ejercicio 2
 let color = colores[2]
 //Ejercicio 3
-console.log(color[0], colores[0])
+color = colores[0]
+console.log(color[0])
 
 //Ejercicio 4
 function aleatorio(min, max)
@@ -19,10 +20,10 @@ console.log(numeros)
 
 //Ejercicio 6 y 7
 function arrayDeNumerosAleatorios (array){
-    for(i = 1; i <= 10; i++){
-        array.push(aleatorio(1,10))
-    }
-    return array
+  for(i = 1; i <= 10; i++){
+    array.push(aleatorio(1,10))
+  }
+  return array
 }
 console.log(arrayDeNumerosAleatorios([]))
 console.log(arrayDeNumerosAleatorios([]))
