@@ -152,7 +152,7 @@ $(".table").click(function(){
     document.getElementById("tabla").style.background = "#A1B7D9"
 })
 
-//12. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para
+//12. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para  
 //ocultar un elemento jQuery tiene un método llamado hide()
 $("#li1").click(function(){
     $("#li1").hide()

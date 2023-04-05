@@ -1,0 +1,81 @@
+.navbar-nav{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.d-flex{
+    padding-top: 12px;
+}
+.navbar-nav img{
+    height: 32px;
+}
+.banner-principal{
+    display: flex;
+    background-image: url(img/banner-principal.jpg);
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
+.conteiner-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-principal{
+    font-size: 40px;
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin-top: 33%;
+}
+.p-principal{
+    font-size: 22px;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.btn-comenzar{
+    width: 20%;
+    font-size: 16px;
+    margin-top: 30px;
+    color:aliceblue;
+    background-color: #E21982;
+    border-radius: 18px;
+    border: 0px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 6px;
+}
+.banner-secundario{
+    display: flex;
+    background-color: #E8E8E8;
+    height: 330px;
+}
+.conteiner-secundario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.p-secundario{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+.titulo-secundario{
+    font-size: 40px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.subtitulo-secundario{
+    font-size: 12px;
+    color: #E21982;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin-top: 10%;
+}
+.ayuda{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
