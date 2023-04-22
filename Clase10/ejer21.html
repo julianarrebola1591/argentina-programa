@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body style="padding: 20px;">
+
+    <div style="border: 2px solid black;" id="div" onload="ocultar()">
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="p4">Discurso íntegro de Joe Biden en su toma de posesión como presidente de Estados Unidos.</p>
+        <p id="p5">Se han perdido millones de empleos; cientos de miles de empresas han cerrado; un grito por la justicia racial que lleva gestándose casi 400 años nos conmueve. El sueño de la justicia para todos no se seguirá aplazando. Un grito de supervivencia nos llega del propio planeta, un grito que ya no puede ser más desesperado ni más claro. Y ahora, un aumento del extremismo político, la supremacía blanca, el terrorismo interno al que debemos enfrentarnos y al que derrotaremos.</p>
+        <p id="p6">Se han perdido millones de empleos; cientos de miles de empresas han cerrado; un grito por la justicia racial que lleva gestándose casi 400 años nos conmueve. El sueño de la justicia para todos no se seguirá aplazando. Un grito de supervivencia nos llega del propio planeta, un grito que ya no puede ser más desesperado ni más claro. Y ahora, un aumento del extremismo político, la supremacía blanca, el terrorismo interno al que debemos enfrentarnos y al que derrotaremos.</p>
+    </div>
+
+    <script>
+        $("#p4").hide()
+        $("#p5").hide()
+        $("#p6").hide()
+
+        $("#div").click(function(){
+            $("#p1").toggle(1000)
+            $("#p2").toggle(1000)
+            $("#p3").toggle(1000, function(){
+                $("#p4").toggle(1000)
+                $("#p5").toggle(1000)
+                $("#p6").toggle(1000)
+            })
+        })
+    </script>
+</body>
+</html>
